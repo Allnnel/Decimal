@@ -1,6 +1,6 @@
 #include "s21_decimal.h"
 
-//  ДЛЯ ПЕРЕВОДА В double !!!!!!!!!
+
 
 int s21_Equate_Double_ToDecimal(s21_decimal value,
                                 s21_double_decimal* double_value) {
@@ -9,7 +9,7 @@ int s21_Equate_Double_ToDecimal(s21_decimal value,
     double_value->bits[0] = value.bits[0];
     double_value->bits[1] = value.bits[1];
     double_value->bits[2] = value.bits[2];
-    double_value->bits[5] = value.bits[3];  // степень и знак
+    double_value->bits[5] = value.bits[3];  
   } else
     error = 1;
   return error;
